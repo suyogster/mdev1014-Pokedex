@@ -18,7 +18,7 @@ export default function PokemonCard(props: PokemonCardProps) {
       style={[styles.container, { backgroundColor: primaryColor }]}
       onPress={() => navigation.navigate('Detail', { data, index: id })}
     >
-      <View style={styles.row}>
+      <View key={data.name} style={styles.row}>
         <Text style={[styles.firstRowText, { alignSelf: 'flex-start' }]}>
           {name}
         </Text>
@@ -30,6 +30,7 @@ export default function PokemonCard(props: PokemonCardProps) {
       <View style={{ marginVertical: 2 }}></View>
       <View style={styles.row}>
         <View
+          key={data.name}
           style={{
             alignSelf: 'flex-start',
             justifyContent: 'flex-start',
@@ -38,6 +39,7 @@ export default function PokemonCard(props: PokemonCardProps) {
         >
           {type.map((type, index) => (
             <View
+              key={index}
               id={index.toString()}
               style={[
                 styles.typeSection,

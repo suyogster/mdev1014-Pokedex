@@ -17,7 +17,7 @@ export default function FavoriteCard(props: PokemonCardProps) {
       style={[styles.container, { backgroundColor: primaryColor }]}
       onPress={() => navigation.navigate('Detail', { data, index: id })}
     >
-      <View style={styles.row}>
+      <View key={data.name} style={styles.row}>
         <View>
           <Text style={[styles.firstRowText, { alignSelf: 'flex-start' }]}>
             {id}
