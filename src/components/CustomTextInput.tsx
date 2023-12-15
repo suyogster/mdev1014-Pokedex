@@ -2,6 +2,7 @@ import { View, Text, TextInput, StyleSheet } from 'react-native';
 import React from 'react';
 import { colors } from '../theme/theme';
 
+/* Reusable component used for implementing the input fields through multiple components */
 interface Props {
   label: String;
   secureTextEntry: boolean;

@@ -31,7 +31,7 @@ export default function PokemonDetailScreen(props: any) {
   const [selected, setSelected] = useState<boolean>(false);
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <SafeAreaView
         style={[styles.firstSection, { backgroundColor: primaryColor }]}
       >
@@ -127,7 +127,7 @@ export default function PokemonDetailScreen(props: any) {
           )}
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 

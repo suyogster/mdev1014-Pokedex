@@ -7,7 +7,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React, { useState } from 'react';
-import CustomTextInput from './CustomTextInput';
+
+/*This is a search component use for displaying the desired pokemon in the main screen */
+/*It is a simple input component that uses the TextInput component */
 
 interface SearchBarProps {
   onType: (query: string) => void;

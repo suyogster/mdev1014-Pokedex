@@ -1,6 +1,8 @@
 import { View, Text, Image, StyleSheet } from 'react-native';
 import React from 'react';
 
+/*Second screen designed for the onboarding process*/
+
 export default function Message2() {
   return (
     <>

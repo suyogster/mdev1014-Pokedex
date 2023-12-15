@@ -1,6 +1,8 @@
 import { View, Text, StyleSheet, Image } from 'react-native';
 import React, { useEffect } from 'react';
 
+/*This component is to be used for the details screen of each pokemon for describing its abilities and strengths */
+
 const descriptionKeys = [
   'Species',
   'Height',

@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import { colors } from '../theme/theme';
 import IPokemon from '../types/IPokemon';
 
+/*This is a component to display the pokemon in a form of Card component in the main screen */
+
 interface PokemonCardProps {
   id: string;
   data: IPokemon;
