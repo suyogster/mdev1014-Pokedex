@@ -9,6 +9,9 @@
 # Preview
 
 ![App screenshot](./assets/SplashScreen.png)
+![App screenshot](./assets/Onboarding1.jpg)
+![App screenshot](./assets/Onboarding2.jpg)
+![App screenshot](./assets/Onboarding3.jpg)
 
 # Demo
 
