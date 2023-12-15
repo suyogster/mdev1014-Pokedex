@@ -29,7 +29,7 @@ export default function LoginScreen(props: LoginScreenProps) {
         <View style={{ marginVertical: 50 }}>
           <TouchableOpacity
             style={style.button}
-            onPress={() => navigation.navigate('Home')}
+            onPress={() => navigation.navigate('Onboard')}
           >
             <Text
               style={{

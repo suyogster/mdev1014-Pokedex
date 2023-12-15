@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet, Image } from 'react-native';
 import React from 'react';
 import { colors } from '../theme/theme';
+import { user1 } from '../data/mockedUser';
 
 const SettingList = [
   {
@@ -25,6 +26,17 @@ export default function ProfileScreen() {
         source={require('../../assets/UserProfile.png')}
       />
       <View style={styles.outerLayer}>
+        <Text
+          style={{
+            textAlign: 'center',
+            color: '#495767',
+            fontWeight: '500',
+            fontSize: 18,
+            paddingBottom: 10,
+          }}
+        >
+          {user1.username}
+        </Text>
         <View style={styles.innerLayer}>
           {SettingList.map((item, index) => (
             <View key={index} style={styles.settingList}>
@@ -70,7 +82,7 @@ const styles = StyleSheet.create({
     borderRadius: 16,
     width: '95%',
     height: '40%',
-    paddingTop: 90,
+    paddingTop: 70,
     paddingHorizontal: 20,
     paddingBottom: 10,
   },
