@@ -11,6 +11,12 @@ import OnboardingScreen from './src/screens/OnboardingScreen';
 
 const Stack = createNativeStackNavigator();
 
+/**
+ * screeen contains
+ * contains
+ * @returns 
+ */
+
 export default function App() {
   return (
     <NavigationContainer>
