@@ -47,7 +47,7 @@ export default function PokemonDetailScreen(props: any) {
                 source={require('../../assets/FavoriteIcon.png')}
               />
             </TouchableOpacity>
-            <Text style={styles.indexText}>{index}</Text>
+            <Text style={styles.indexText}>{`##${index}`}</Text>
           </View>
         </View>
 
@@ -62,7 +62,7 @@ export default function PokemonDetailScreen(props: any) {
             <View style={styles.typeSection}>
               {type.map((type, index) => (
                 <View
-                  key={index.toString()}
+                  key={`#${index.toString()}`}
                   style={[
                     styles.typeContainer,
                     { backgroundColor: '#FFFFFF', opacity: 0.5 },
