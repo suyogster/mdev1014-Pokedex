@@ -62,7 +62,7 @@ export default function PokemonDetailScreen(props: any) {
             <View style={styles.typeSection}>
               {type.map((type, index) => (
                 <View
-                  id={index.toString()}
+                  key={index.toString()}
                   style={[
                     styles.typeContainer,
                     { backgroundColor: '#FFFFFF', opacity: 0.5 },
