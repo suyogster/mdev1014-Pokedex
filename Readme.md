@@ -16,7 +16,7 @@
 # Demo
 
 <<div align="center">
-<img src="./assets/pokedexDemo.gif" width="32%"/>
+<img src="./assets/pokedexDemo.gif"/>
 
 </div>
 
