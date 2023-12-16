@@ -9,6 +9,8 @@
 # Preview
 
 ![App screenshot](./assets/SplashScreen.png)
+![App screenshot](./assets/Login.jpg)
+![App screenshot](./assets/Register.jpg)
 ![App screenshot](./assets/Onboarding1.jpg)
 ![App screenshot](./assets/Onboarding2.jpg)
 ![App screenshot](./assets/Onboarding3.jpg)
@@ -16,7 +18,7 @@
 # Demo
 
 <<div align="center">
-<img src="./assets/Demo.mp4"/>
+<img src="./assets/Demo.gif"/>
 
 </div>
 
