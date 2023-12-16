@@ -17,7 +17,7 @@
 
 # Demo
 
-<<div align="center">
+<div align="center">
 <img src="./assets/Demo.gif"/>
 
 </div>
