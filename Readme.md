@@ -16,7 +16,7 @@
 # Demo
 
 <<div align="center">
-<img src="./assets/pokedexDemo.gif"/>
+<img src="./assets/Demo.mp4"/>
 
 </div>
 
