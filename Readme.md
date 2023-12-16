@@ -15,8 +15,9 @@
 
 # Demo
 
-<div align="center">
-  
+<<div align="center">
+<img src="./assets/pokedexDemo.gif" width="32%"/>
+
 </div>
 
 # Running the app
