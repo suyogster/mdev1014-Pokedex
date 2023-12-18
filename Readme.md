@@ -12,6 +12,9 @@
 ![App screenshot](./assets/Onboarding1.jpg)
 ![App screenshot](./assets/Onboarding2.jpg)
 ![App screenshot](./assets/Onboarding3.jpg)
+![App screenshot](./assets/Profile.jpg)
+![App screenshot](./assets/Bulbasaur.jpg)
+![App screenshot](./assets/Search_Page.jpg)
 
 # Demo
 
