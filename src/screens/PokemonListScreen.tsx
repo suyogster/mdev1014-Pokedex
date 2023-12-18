@@ -5,6 +5,11 @@ import SearchBar from '../components/SearchBar';
 import PokemonCard from '../components/PokemonCard';
 import { pokemonData } from '../data/mockedPokemon';
 
+/**
+ * This screen contains Search Bar functionality that displays the Pokemon cards by number
+ * It also navigates to PokemonDetailScreen
+ */
+
 export default function PokemonListScreen(props: any) {
   const [query, setQuery] = useState<string>('');
 
