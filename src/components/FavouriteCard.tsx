@@ -2,6 +2,8 @@ import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
 import IPokemon from '../types/IPokemon';
 
+/* This component is used as a reusable component for listing the favourite pokemon collections in Card component */
+
 interface PokemonCardProps {
   id: string;
   data: IPokemon;

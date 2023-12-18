@@ -1,6 +1,9 @@
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
 
+/*This component is also used in the pokemon details screen for describing the stats of each pokemon */
+/* A custom progress bar is implemented in order to visualize the strengths and abilities */
+
 interface DetailStatsProp {
   attack: number;
   hp: number;
