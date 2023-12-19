@@ -113,7 +113,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     justifyContent: 'center',
     alignSelf: 'flex-end',
-    marginBottom: 50,
+    //change for android layout
+    marginBottom: 20,
   },
   button: {
     backgroundColor: '#F57D31',
@@ -126,12 +127,14 @@ const styles = StyleSheet.create({
   dotContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginBottom: 80,
+    //change for android layout
+    marginBottom: 20,
   },
   dot: {
     borderWidth: 4,
     borderRadius: 50,
     marginHorizontal: 2,
+    marginTop: 40,
     maxHeight: 3,
   },
 });

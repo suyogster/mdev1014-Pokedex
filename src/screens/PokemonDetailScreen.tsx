@@ -145,6 +145,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignContent: 'center',
     paddingHorizontal: 20,
+    //change for android layout
+    marginTop: 40,
   },
 
   customHeaderRightIcons: {
