@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   Image,
   SafeAreaView,
+  Platform,
 } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import IPokemon from '../types/IPokemon';
@@ -31,7 +32,7 @@ export default function PokemonDetailScreen(props: any) {
   const [selected, setSelected] = useState<boolean>(false);
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <SafeAreaView
         style={[styles.firstSection, { backgroundColor: primaryColor }]}
       >
@@ -47,7 +48,7 @@ export default function PokemonDetailScreen(props: any) {
                 source={require('../../assets/FavoriteIcon.png')}
               />
             </TouchableOpacity>
-            <Text style={styles.indexText}>{`##${index}`}</Text>
+            <Text style={styles.indexText}>{`${index}`}</Text>
           </View>
         </View>
 
@@ -62,7 +63,7 @@ export default function PokemonDetailScreen(props: any) {
             <View style={styles.typeSection}>
               {type.map((type, index) => (
                 <View
-                  key={`#${index.toString()}`}
+                  key={`${index.toString()}`}
                   style={[
                     styles.typeContainer,
                     { backgroundColor: '#FFFFFF', opacity: 0.5 },
@@ -127,13 +128,14 @@ export default function PokemonDetailScreen(props: any) {
           )}
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    marginTop: Platform.OS === 'android' ? 20 : 0,
   },
   firstSection: {
     flex: 0.6,
