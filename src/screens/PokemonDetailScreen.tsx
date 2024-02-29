@@ -145,6 +145,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignContent: 'center',
     paddingHorizontal: 20,
+    //change for android layout
+    paddingTop: 30,
   },
 
   customHeaderRightIcons: {
@@ -201,6 +203,7 @@ const styles = StyleSheet.create({
   statsSection: {
     flex: 0.5,
     margin: 20,
+    maxHeight: '40%',
   },
 
   statsHeader: {
@@ -218,5 +221,6 @@ const styles = StyleSheet.create({
 
   statsContentSection: {
     flex: 1,
+    paddingBottom: 10,
   },
 });
