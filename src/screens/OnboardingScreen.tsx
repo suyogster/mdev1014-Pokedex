@@ -1,5 +1,5 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
-import React, { useEffect, useState } from 'react';
+import { View, Text, StyleSheet, Image, TouchableOpacity, Platform } from 'react-native';
+import React, { useState } from 'react';
 import { colors } from '../theme/theme';
 import Message1 from '../components/onboard/Message1';
 import Message2 from '../components/onboard/Message2';
@@ -113,7 +113,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     justifyContent: 'center',
     alignSelf: 'flex-end',
-    marginBottom: 50,
+    //change for android layout
+    marginBottom: Platform.OS == "ios" ? 0 : 20,
   },
   button: {
     backgroundColor: '#F57D31',
@@ -126,12 +127,15 @@ const styles = StyleSheet.create({
   dotContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
-    marginBottom: 80,
+    //change for android layout
+    marginBottom: Platform.OS == "ios" ? 0 : 20,
   },
   dot: {
     borderWidth: 4,
     borderRadius: 50,
     marginHorizontal: 2,
     maxHeight: 3,
+    //change for android
+    marginTop: Platform.OS == "ios" ? 0 : 40,
   },
 });

@@ -5,8 +5,9 @@ import {
   TouchableOpacity,
   Image,
   SafeAreaView,
+  Platform,
 } from 'react-native';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import IPokemon from '../types/IPokemon';
 import Detail from '../components/Detail';
 import DetailStats from '../components/DetailStats';
@@ -145,6 +146,8 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignContent: 'center',
     paddingHorizontal: 20,
+    //change for android layout
+    paddingTop: Platform.OS == "ios" ? 0 : 30,
   },
 
   customHeaderRightIcons: {
@@ -201,6 +204,8 @@ const styles = StyleSheet.create({
   statsSection: {
     flex: 0.5,
     margin: 20,
+    //Change for android
+    maxHeight: Platform.OS == "ios" ? 0 : '40%',
   },
 
   statsHeader: {
@@ -218,5 +223,7 @@ const styles = StyleSheet.create({
 
   statsContentSection: {
     flex: 1,
+    //Change for android
+    paddingBottom: Platform.OS == "ios" ? 0 : 10,
   },
 });
