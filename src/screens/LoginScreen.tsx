@@ -42,7 +42,7 @@ export default function LoginScreen(props: LoginScreenProps) {
               LOGIN
             </Text>
           </TouchableOpacity>
-          <Text
+          {/*<Text
             style={{
               textAlign: 'center',
               marginTop: 24,
@@ -61,7 +61,7 @@ export default function LoginScreen(props: LoginScreenProps) {
             >
               Register
             </Text>
-          </Text>
+          </Text>*/}
         </View>
       </View>
     </SafeAreaView>
